@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<PluginConfig>
+	<Field id="serialPortLabel" type="label">
+		<Label>Select the serial port used to communicate with your thermostats (via RS485):</Label>
+	</Field>
+	<Field type="serialport" id="devicePortFieldId" />
+
+	<Field type= "separator" id="separator1"/>
+
+
+	<Field id="intervalLabel" type="label">
+		<Label>Here you can fine-tune intervals for polling of the thermostats and synchronizing their clocks. The default settings should work fine.</Label>
+	</Field>
+
+	<Field id="labelClockSyncInterval" type="label">
+		<Label>Thermostat clock synchronisation interval:</Label>
+	</Field>
+	<Field id="clockSyncInterval" type="textfield" defaultValue="60">
+		<Label>Interval in minutes:</Label>
+	</Field>
+
+	<Field id="labelPollInterval" type="label">
+		<Label>Poll interval:</Label>
+	</Field>
+	<Field id="pollInterval" type="textfield" defaultValue="5">
+		<Label>Interval in minutes:</Label>
+	</Field>
+	
+	<Field type= "separator" id="separator3"/>
+
+	<Field id="debugLabel" type="label">
+		<Label>If you are having problems with the plugin (or you are instructed by support), you can enable extra logging in the Event Log window by checking this button.</Label>
+	</Field>
+	
+
+	<Field id="showDebugInfo" type="checkbox">
+		<Label>Enable debuging:</Label>
+		<Description>Basic debugging information</Description>
+	</Field>
+	<Field id="showDetailDebugInfo" type="checkbox" visibleBindingId="showDebugInfo" visibleBindingValue="true">
+		<Label>Enable detailed debuging:</Label>
+		<Description>More detailed information.</Description>
+	</Field>
+</PluginConfig>

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<Devices>
+	<Device type="custom" id="PRT-HWN">
+		<Name>Heatmiser PRT-HWN</Name>
+		<ConfigUI>
+			<Field id="label1" type="label">
+				<Label>Specify the network address of this thermostat. See the Heatmiser manual for further info.</Label>
+			</Field>
+			<Field id="address" type="textfield">
+				<Label>Address (1-32):</Label>
+			</Field>
+		</ConfigUI>
+		<States>
+			<State id="status">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Status</TriggerLabel>
+				<ControlPageLabel>Status</ControlPageLabel>
+			</State>
+			<State id="setRoomTemp">
+				<ValueType>Integer</ValueType>
+				<TriggerLabel>Desired temperature</TriggerLabel>
+				<ControlPageLabel>Desired temperature</ControlPageLabel>
+			</State>
+			<State id="airTemp">
+				<ValueType>Integer</ValueType>
+				<TriggerLabel>Actual air temperature</TriggerLabel>
+				<ControlPageLabel>Actual air temperature</ControlPageLabel>
+			</State>
+			<State id="hotWaterOn">
+				<ValueType>Boolean</ValueType>
+				<TriggerLabel>Actual air temperature</TriggerLabel>
+				<ControlPageLabel>Actual air temperature</ControlPageLabel>
+			</State>
+			<State id="heatingOn">
+				<ValueType>Boolean</ValueType>
+				<TriggerLabel>Actual air temperature</TriggerLabel>
+				<ControlPageLabel>Actual air temperature</ControlPageLabel>
+			</State>
+			<State id="temperatureFormat">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Temperature format</TriggerLabel>
+				<ControlPageLabel>Temperature format</ControlPageLabel>
+			</State>
+			<State id="rateOfChange">
+				<ValueType>Number</ValueType>
+				<TriggerLabel>Temperature rate of change</TriggerLabel>
+				<ControlPageLabel>Temperature rate of change</ControlPageLabel>
+			</State>
+		</States>
+		<UiDisplayStateId>status</UiDisplayStateId>
+	</Device>
+	<Device type="custom" id="PRT-N">
+		<Name>Heatmiser PRT-N</Name>
+		<ConfigUI>
+			<Field id="labelAddress" type="label">
+				<Label>Specify the network address of this thermostat. See the Heatmiser manual for further info.</Label>
+			</Field>
+			<Field id="address" type="textfield">
+				<Label>Address (1-32):</Label>
+			</Field>
+		</ConfigUI>
+		<States>
+			<State id="status">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Status</TriggerLabel>
+				<ControlPageLabel>Status</ControlPageLabel>
+			</State>
+			<State id="setRoomTemp">
+				<ValueType>Integer</ValueType>
+				<TriggerLabel>Desired temperature</TriggerLabel>
+				<ControlPageLabel>Desired temperature</ControlPageLabel>
+			</State>
+			<State id="airTemp">
+				<ValueType>Integer</ValueType>
+				<TriggerLabel>Actual air temperature</TriggerLabel>
+				<ControlPageLabel>Actual air temperature</ControlPageLabel>
+			</State>
+			<State id="heatingOn">
+				<ValueType>Boolean</ValueType>
+				<TriggerLabel>Actual air temperature</TriggerLabel>
+				<ControlPageLabel>Actual air temperature</ControlPageLabel>
+			</State>
+			<State id="temperatureFormat">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Temperature format</TriggerLabel>
+				<ControlPageLabel>Temperature format</ControlPageLabel>
+			</State>
+			<State id="rateOfChange">
+				<ValueType>Number</ValueType>
+				<TriggerLabel>Temperature rate of change</TriggerLabel>
+				<ControlPageLabel>Temperature rate of change</ControlPageLabel>
+			</State>
+		</States>
+		<UiDisplayStateId>status</UiDisplayStateId>
+	</Device>
+
+</Devices>

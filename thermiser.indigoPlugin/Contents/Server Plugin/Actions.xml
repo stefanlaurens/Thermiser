@@ -1,0 +1,23 @@
+<?xml version="1.0"?>	
+<Actions>
+	<Action id="setRoomTemp" deviceFilter="self">
+		<Name>Set Temperature</Name>
+		<CallbackMethod>setRoomTemp</CallbackMethod>
+		<ConfigUI>
+			<Field id="description" type="textfield" hidden="true">
+				<Label>runtime calculated</Label>
+			</Field>
+			<Field id="setRoomTemp" type="textfield" defaultValue="20">
+				<Label>Desired temperature:</Label>
+			</Field>
+		</ConfigUI>
+	</Action>
+	<Action id="setHotWaterOn" deviceFilter="self.PRT-HWN">
+		<Name>Hot water: override to ON</Name>
+		<CallbackMethod>setHotWaterOn</CallbackMethod>
+	</Action>
+	<Action id="setHotWaterOff" deviceFilter="self.PRT-HWN">
+		<Name>Hot water: run on programmed schedule</Name>
+		<CallbackMethod>setHotWaterAsScheduled</CallbackMethod>
+	</Action>
+</Actions>
